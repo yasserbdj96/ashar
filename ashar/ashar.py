@@ -1,58 +1,80 @@
+#!/usr/bin/env python
+# coding:utf-8
+#s
 import base64
 import hashlib
+import random
+import string
 
+#start ashar class:
 class ashar:
     def __init__(mysillyobject,key,text):
         mysillyobject.key=key
         mysillyobject.text=text
     
-    def encode(abc):
-        base64_text=base64.b64encode(abc.text.encode('ascii')).decode('ascii').replace("=","YasserBDJ")
-        md5_text=hashlib.md5(abc.text.encode()).hexdigest()
-        md5_key=hashlib.md5(abc.key.encode()).hexdigest()
+    #to md5:
+    def tomd5(text):
+        return hashlib.md5(text.encode()).hexdigest()
+    
+    #to base64:
+    def tob64(text):
+        return base64.b64encode(text.encode('ascii')).decode('ascii')
+    
+    #from base64:
+    def fromb64(text):
+        return base64.b64decode(text.encode('ascii')).decode('ascii')
         
-        text_list=list(base64_text)
-        key_list=list(md5_key)
-        text_md5_list=list(md5_text)
-        
-        x=len(text_list)
-        y=len(key_list)
-        z=len(text_md5_list)
-        
-        level_1=''
-        for i in range(max(x,y,z)):
-            char=""
-            if i<y:
-                if key_list[i].isupper():
-                    char=key_list[i].lower()
-                else:
-                    char=key_list[i].upper()
-                level_1=level_1+char
-            if i<x:
-                if text_list[i].isupper():
-                    char=text_list[i].lower()
-                else:
-                    char=text_list[i].upper()
-                level_1=level_1+char
-            if i<z:
-                if text_md5_list[i].isupper():
-                    char=text_md5_list[i].lower()
-                else:
-                    char=text_md5_list[i].upper()
-                level_1=level_1+char
-            level_1=level_1[::-1]
-        
-        return level_1
-    """
-    def decode(abc):
-        level_1=''
-        for i in range(len(abc.text)):
-            level_1=level_1[::-1]
-       
-        print(abc.key,abc.text)
-     
+    #random_char:
+    def random_char(y):
+        return ''.join(random.choice(string.ascii_letters) for x in range(y))
 
-p1=ashar("123","Yasser_BDJ").encode()
-p2=ashar("123",p1).decode()
-print(p1)
-"""
+    #lower_upper:
+    def lower_upper(char):
+        if char.isupper():
+            char=char.lower()
+        else:
+            char=char.upper()
+        return char
+    
+    #encode:
+    def encode(abc):
+        key_md5=ashar.tomd5(abc.key)+"#"
+        text_base64=ashar.tob64(abc.text)
+        text_md5=ashar.tomd5(text_base64)+"@"
+        text_base64=text_base64.replace("=","YasserBDJ")+":"
+        x=len(key_md5)
+        y=len(text_md5)
+        z=len(text_base64)
+        k=max(x,y,z)
+        key_md5=key_md5+ashar.random_char(k-x)
+        text_md5=text_md5+ashar.random_char(k-y)
+        text_md5=text_md5[::-1]
+        text_base64=text_base64+ashar.random_char(k-z)
+        level_1=''
+        for i in range(k):
+            level_1=level_1+ashar.lower_upper(key_md5[i])+ashar.lower_upper(text_md5[i])+ashar.lower_upper(text_base64[i])
+            level_1=level_1[::-1]
+        return level_1
+    
+    #decode:
+    def decode(abc):
+        level_1=abc.text
+        lited=[]
+        key_md5=text_md5=text_base64=''
+        for i in range(len(level_1)):
+            if level_1[:3]!='':
+                lited.append(level_1[:3])
+                level_1=level_1[3:]
+                level_1=level_1[::-1]
+        for i in range(len(lited)):
+                text_base64=text_base64+ashar.lower_upper(lited[i][0])
+                text_md5=text_md5+ashar.lower_upper(lited[i][1])
+                key_md5=key_md5+ashar.lower_upper(lited[i][2])
+        key_md5=key_md5[::-1]
+        text_base64=text_base64[::-1].replace("YasserBDJ","=")
+        key_md5=key_md5[:32]
+        text_md5=text_md5[:32]
+        text_base64=text_base64.split(":")[0]
+        if key_md5==ashar.tomd5(abc.key) and ashar.tomd5(text_base64)==text_md5:
+            return ashar.fromb64(text_base64)
+#e

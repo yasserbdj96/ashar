@@ -1,6 +1,5 @@
 Ashar Encryption and decryption
 ==========================
-
 This project is for data encryption with password protection.
 
 Installation
@@ -23,7 +22,6 @@ Usage
     #To decrypt
     p2=ashar("<PASSWORD>",p1).decode()
     print(p2)
-
 
 .. begin changelog
 

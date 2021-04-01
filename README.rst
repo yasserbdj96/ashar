@@ -13,7 +13,7 @@ Usage
 =====
 .. code:: python
 
-    import ashar
+    from ashar import ashar
 
     #For encryption
     p1=ashar("<PASSWORD>","<TEXT>").encode()

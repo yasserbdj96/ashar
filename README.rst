@@ -20,15 +20,19 @@ Usage
     print(p1)
     
     #To decrypt
-    p2=ashar("<PASSWORD>",p1).decode()
+    p2=ashar("<PASSWORD>","<ENCRYPTED_TEXT>").decode()
     print(p2)
 
 .. begin changelog
 
 Changelog
 =========
+0.5.1
+-----
+- Fix bugs.
+
 0.5.0
 -----
-- First public release
+- First public release.
 
 .. end changelog

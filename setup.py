@@ -6,12 +6,12 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
     name="ashar",
-    version='0.5.0',
+    version='0.5.1',
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
     description='ashar',
     long_description_content_type="text/markdown",
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     packages=find_packages(),
     project_urls={  # Optional
         'Author Github': "https://github.com/byRo0t96",

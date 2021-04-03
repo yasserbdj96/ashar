@@ -6,10 +6,10 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
     name="ashar",
-    version='0.5.1',
+    version='0.5.3',
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
-    description='ashar',
+    description='This project is for data encryption with password protection.',
     long_description_content_type="text/markdown",
     long_description=open('README.rst').read(),
     packages=find_packages(),

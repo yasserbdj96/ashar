@@ -27,7 +27,7 @@ Usage
 
 Changelog
 =========
-0.5.1
+0.5.3
 -----
 - Fix bugs.
 

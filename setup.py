@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # coding:utf-8
+# code by : Yasser BDJ
+# email : by.root96@gmail.com
 #s
 from setuptools import setup, find_packages
 
 # Setting up
 setup(
     name="ashar",
-    version='0.5.3',
+    version='0.5.4',
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
     description='This project is for data encryption with password protection.',

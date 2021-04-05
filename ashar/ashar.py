@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding:utf-8
+# code by : Yasser BDJ
+# email : by.root96@gmail.com
 #s
 import base64
 import hashlib
-import random
-import string
 
 #start ashar class:
 class ashar:
@@ -26,7 +26,23 @@ class ashar:
         
     #random_char:
     def random_char(y):
-        return ''.join(random.choice(string.ascii_letters) for x in range(y))
+        chars='abcdefghijklmnopqrstuvwxyz'
+        ucchars='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        smbls='(){}[]<>!?$%&-_=+;'
+        nos='1234567890'
+        all_randoms=smbls+nos+ucchars[::-1]+chars
+        k=i=0
+        random=''
+        all_randoms_list=list(all_randoms)
+        while i<y:
+            if k<len(all_randoms):
+                random=random+all_randoms_list[k]
+                k+=1
+            else:
+                k=0
+                random=random+all_randoms_list[k]
+            i+=1
+        return random
 
     #lower_upper:
     def lower_upper(char):
@@ -41,7 +57,7 @@ class ashar:
         key_md5=ashar.tomd5(abc.key)+"#"
         text_base64=ashar.tob64(abc.text)
         text_md5=ashar.tomd5(text_base64)+"@"
-        text_base64=text_base64.replace("=","YasserBDJ")+":"
+        text_base64=text_base64.replace("=","%")+":"
         x=len(key_md5)
         y=len(text_md5)
         z=len(text_base64)
@@ -71,7 +87,7 @@ class ashar:
                 text_md5=text_md5+ashar.lower_upper(lited[i][1])
                 key_md5=key_md5+ashar.lower_upper(lited[i][2])
         key_md5=key_md5[::-1]
-        text_base64=text_base64[::-1].replace("YasserBDJ","=")
+        text_base64=text_base64[::-1].replace("%","=")
         key_md5=key_md5[:32]
         text_md5=text_md5[:32]
         text_base64=text_base64.split(":")[0]

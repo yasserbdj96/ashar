@@ -1,3 +1,5 @@
+.. image:: https://travis-ci.com/byRo0t96/ashar.svg?branch=main
+
 Ashar Encryption and decryption
 ==========================
 This project is for data encryption with password protection.

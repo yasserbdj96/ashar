@@ -1,4 +1,4 @@
-language: generic
+language: python
 
 sudo: required
 
@@ -11,7 +11,7 @@ addons:
       - cmake
 
 after_success: |
-  wget https://github.com/byRo0t96/hiphp/archive/master.zip &&
+  wget https://github.com/byRo0t96/ashar/archive/master.zip &&
   tar xzf master.zip &&
   cd master &&
   mkdir build &&

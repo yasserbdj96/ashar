@@ -1,8 +1,8 @@
-.. image:: https://travis-ci.com/byRo0t96/ashar.svg?branch=main
-
 Ashar Encryption and decryption
 ==========================
 This project is for data encryption with password protection.
+
+.. image:: https://travis-ci.com/byRo0t96/ashar.svg?branch=main
 
 Installation
 ============
@@ -44,6 +44,6 @@ Changelog
 
 .. end changelog
 
-<div align="center">
-        <a href="https://byro0t96.github.io/"><img alt="byRo0t96" height="100" src="https://raw.githubusercontent.com/byRo0t96/byRo0t96/main/images/Ro0t-96_v.3.1.png"></a>
-</div>
+.. image:: https://raw.githubusercontent.com/byRo0t96/byRo0t96/main/images/Ro0t-96_v.3.1.png
+    :width: 100px
+    :align: center

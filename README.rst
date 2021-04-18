@@ -29,6 +29,11 @@ Usage
 
 Changelog
 =========
+
+0.5.5
+-----
+- Fix bugs.
+
 0.5.4
 -----
 - Static encryption.

@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
     name="ashar",
-    version='0.5.4',
+    version=open('version.txt').read(),
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
     description='This project is for data encryption with password protection.',

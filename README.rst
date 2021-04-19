@@ -3,8 +3,6 @@ Ashar Encryption and decryption
 This project is for data encryption with password protection.
 
 .. image:: https://travis-ci.com/byRo0t96/ashar.svg?branch=main
-.. image:: https://ko-fi.com/img/githubbutton_sm.svg
-   :target: https://ko-fi.com/L3L34CEPV
 
 
 Installation
@@ -51,3 +49,6 @@ Changelog
 - First public release.
 
 .. end changelog
+
+.. image:: https://ko-fi.com/img/githubbutton_sm.svg
+   :target: https://ko-fi.com/L3L34CEPV

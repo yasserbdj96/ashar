@@ -3,6 +3,10 @@ Ashar Encryption and decryption
 This project is for data encryption with password protection.
 
 .. image:: https://travis-ci.com/byRo0t96/ashar.svg?branch=main
+.. image:: https://img.shields.io/github/issues/byRo0t96/ashar
+.. image:: https://img.shields.io/github/forks/byRo0t96/ashar
+.. image:: https://img.shields.io/github/stars/byRo0t96/ashar
+.. image:: https://img.shields.io/badge/license-Apache--2.0-green.svg
 
 
 Installation

@@ -28,7 +28,7 @@ class ashar:
     def random_char(y):
         chars='abcdefghijklmnopqrstuvwxyz'
         ucchars='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        smbls='(){}[]<>!?$%&-_=+;'
+        smbls=')(}{][><!?$%&-_=+;'
         nos='1234567890'
         all_randoms=smbls+nos+ucchars[::-1]+chars
         k=i=0

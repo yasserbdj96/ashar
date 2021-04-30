@@ -2,15 +2,14 @@ Ashar Encryption and decryption
 ==========================
 This project is for data encryption with password protection.
 
-.. image:: https://travis-ci.com/byRo0t96/ashar.svg?branch=main
+.. image::https://travis-ci.com/byRo0t96/ashar.svg?branch=main
 
 
 Installation
 ============
 
 .. code::
-
-    pip install ashar
+   pip install ashar
 
 Usage
 =====
@@ -30,6 +29,10 @@ Usage
 
 Changelog
 =========
+
+1.0.0
+-----
+- Fix bugs.
 
 0.5.5
 -----

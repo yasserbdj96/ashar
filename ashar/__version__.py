@@ -1,0 +1,11 @@
+__version__='1.0.0'
+__name__="ashar"
+__author__="Yasser BDJ (Ro0t96)"
+__author_email__="by.root96@gmail.com"
+__description__="This project is for data encryption with password protection."
+__Author_WebSite__="https://byro0t96.github.io/"
+__Source_Code__="https://github.com/byRo0t96/ashar"
+__keywords__=['python','ashar','encode','decode','key','password']
+__install_requires__=[]
+__license__='Apache Software License'
+__copyright__='Copyright 2021 '+__author__

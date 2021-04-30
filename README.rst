@@ -7,7 +7,7 @@ This project is for data encryption with password protection.
 .. image:: https://img.shields.io/github/forks/byRo0t96/ashar
 .. image:: https://img.shields.io/github/stars/byRo0t96/ashar
 .. image:: https://img.shields.io/badge/license-Apache--2.0-green.svg
-
+.. image:: https://img.shields.io/badge/python-3.x.x-blue
 
 Installation
 ============

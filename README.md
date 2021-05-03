@@ -2,7 +2,9 @@
 <p>This project is for data encryption with password protection.</p>
 
 <h2>Installation:</h2> 
-```pip install ashar```
+```
+pip install ashar
+```
 
 <h2>Usage:</h2>
 ```python

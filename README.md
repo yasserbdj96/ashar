@@ -2,12 +2,15 @@
 <p>This project is for data encryption with password protection.</p>
 
 <h2>Installation:</h2> 
+
 ```
 pip install ashar
 ```
 
+
 <h2>Usage:</h2>
-```python
+
+```python 
 #s
 from ashar import ashar
 
@@ -21,7 +24,9 @@ print(p2)
 #e
 ```
 
+
 <h2>Examples:</h2>
+
 ```python
 #!/usr/bin/env python
 # coding:utf-8
@@ -44,6 +49,7 @@ print(p2)
 
 
 <h2>Changelog:</h2>
+
 ## 1.0.1
 - You can encrypt anything now.
 - Fix bugs.

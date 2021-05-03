@@ -1,6 +1,15 @@
 <h1>Ashar Encryption and decryption</h1> 
 <p>This project is for data encryption with password protection.</p>
 
+<p align="center">
+    <img align="center" src="https://travis-ci.com/byRo0t96/ashar.svg?branch=main">
+    <img align="center" src="https://img.shields.io/github/issues/byRo0t96/ashar">
+	<img align="center" src="https://img.shields.io/github/forks/byRo0t96/ashar">
+	<img align="center" src="https://img.shields.io/github/stars/byRo0t96/ashar">
+	<img align="center" src="https://img.shields.io/badge/license-Apache--2.0-green.svg">
+	<img align="center" src="https://img.shields.io/badge/python-3.x.x-blue">
+</p>
+
 <h2>Installation:</h2> 
 
 ```

@@ -24,7 +24,7 @@ __README_MD__data=read("README.html")
 if path.exists("screenshot/screenshot.png"):
     __README_MD__data=__README_MD__data.replace('{__README_MD__screenshot__}',"screenshot/screenshot.png")
 else:
-    __README_MD__data=__README_MD__data.replace('<p align="center">\n	<img alt="byRo0t96" height="100" align="center" src="https://raw.githubusercontent.com/byRo0t96/{__name__}/main/{__README_MD__screenshot__}">\n</p><br><br>',"")
+    __README_MD__data=__README_MD__data.replace('<p align="center">\n	<img alt="byRo0t96" align="center" src="https://raw.githubusercontent.com/byRo0t96/{__name__}/main/{__README_MD__screenshot__}">\n</p><br><br>',"")
 __README_MD__data=__README_MD__data.replace('{__README_MD__title__}',__README_MD__title__)
 __README_MD__data=__README_MD__data.replace('{__README_MD__description__}',__README_MD__description__)
 __README_MD__data=__README_MD__data.replace('{__name__}',__name__)

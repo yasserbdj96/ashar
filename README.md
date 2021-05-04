@@ -1,3 +1,7 @@
+<p align="center">
+	<img alt="byRo0t96" height="100" align="center" src="https://raw.githubusercontent.com/byRo0t96/ashar/main/screenshot/screenshot.png">
+</p><br><br>
+
 <h1>Ashar Encryption and decryption</h1> 
 <p>This project is for data encryption with password protection.</p>
 
@@ -55,7 +59,7 @@ print(p2)
 
 <h2>Changelog:</h2>
 
-## 1.0.3
+## 1.0.5
 - You can encrypt anything now.
 - Fix bugs.
 

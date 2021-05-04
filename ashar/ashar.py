@@ -5,13 +5,15 @@
 #s
 import base64
 import hashlib
+import re
 
 #start ashar class:
 class ashar:
-    def __init__(mysillyobject,key,text):
-        mysillyobject.key=key
-        mysillyobject.text=text
-    
+    #__init__:
+    def __init__(self,key,text):
+        self.key=key
+        self.text=re.search("b'(.*)'",str(text.replace("'","__smbl_1__").encode('utf-8'))).group(1)
+
     #to md5:
     def tomd5(text):
         return hashlib.md5(text.encode()).hexdigest()
@@ -26,8 +28,8 @@ class ashar:
         
     #random_char:
     def random_char(y):
-        chars='abcdefghijklmnopqrstuvwxyz'
-        ucchars='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        chars='selfdefghijklmnopqrstuvwxyz'
+        ucchars='selfDEFGHIJKLMNOPQRSTUVWXYZ'
         smbls=')(}{][><!?$%&-_=+;'
         nos='1234567890'
         all_randoms=smbls+nos+ucchars[::-1]+chars
@@ -53,9 +55,9 @@ class ashar:
         return char
     
     #encode:
-    def encode(abc):
-        key_md5=ashar.tomd5(abc.key)+"#"
-        text_base64=ashar.tob64(abc.text)
+    def encode(self):
+        key_md5=ashar.tomd5(self.key)+"#"
+        text_base64=ashar.tob64(self.text)
         text_md5=ashar.tomd5(text_base64)+"@"
         text_base64=text_base64.replace("=","%")+":"
         x=len(key_md5)
@@ -73,8 +75,8 @@ class ashar:
         return level_1
     
     #decode:
-    def decode(abc):
-        level_1=abc.text
+    def decode(self):
+        level_1=self.text
         lited=[]
         key_md5=text_md5=text_base64=''
         for i in range(len(level_1)):
@@ -91,6 +93,6 @@ class ashar:
         key_md5=key_md5[:32]
         text_md5=text_md5[:32]
         text_base64=text_base64.split(":")[0]
-        if key_md5==ashar.tomd5(abc.key) and ashar.tomd5(text_base64)==text_md5:
-            return ashar.fromb64(text_base64)
+        if key_md5==ashar.tomd5(self.key) and ashar.tomd5(text_base64)==text_md5:
+            return eval(f"b'{ashar.fromb64(text_base64)}'.decode('utf-8')").replace("__smbl_1__","'")
 #e

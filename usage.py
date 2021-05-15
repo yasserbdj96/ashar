@@ -1,3 +1,4 @@
+# USAGE :
 #s
 from ashar import ashar
 

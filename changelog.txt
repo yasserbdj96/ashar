@@ -1,3 +1,12 @@
+## 1.1.2
+ - fix bugs.
+ - new build 
+
+## 1.1.1
+- Fix bugs.
+
+## 1.1.0
+- Import pakages by pipincluder.
 
 ## 1.0.6
 - You can encrypt anything now.
@@ -18,4 +27,3 @@
 
 ## 0.5.0
 - First public release.
-

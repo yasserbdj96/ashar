@@ -1,7 +1,7 @@
 from setuptools import setup,find_packages
 setup(
     name="ashar",
-    version="1.1.2",
+    version="1.1.4",
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
     description='''This project is for data encryption with password protection.''',
@@ -9,9 +9,9 @@ setup(
     long_description=open('README.md','r').read(),
     license="Apache Software License",
     packages=find_packages(),
+    url="https://github.com/byRo0t96/ashar",
     project_urls={
         'Author WebSite': "https://byro0t96.github.io/",
-        'Source Code': "https://github.com/byRo0t96/ashar",
     },
     install_requires=['pipincluder'],
     keywords=['python', 'ashar', 'encode', 'decode', 'key', 'password', 'encrypt anything with password'],

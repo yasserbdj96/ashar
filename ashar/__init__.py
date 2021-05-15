@@ -26,14 +26,14 @@ p1=ashar("123","Example:1").encode()
 print(p1)
     
 #To decrypt
-p2=ashar("123","p1").decode()
+p2=ashar("123",p1).decode()
 print(p2)
 #e
 ##################################################################
 """
 # VALUES :
 #s
-__version__="1.1.2"
+__version__="1.1.4"
 __name__="ashar"
 __author__="Yasser BDJ (Ro0t96)"
 __author_email__="by.root96@gmail.com"
@@ -60,7 +60,8 @@ See the License for the specific language governing permissions and
 limitations under the License.'''
 __copyright__='Copyright 2008 -> Present, '+__author__
 
-__changelog__=("## 1.1.2\n - fix bugs.\n - new build \n\n")
+__changelog__=("## 1.1.4\n - fix bugs.\n - new build \n\n")
+__changelog__=__changelog__+("## 1.1.2\n - fix bugs.\n - new build \n\n")
 __changelog__=__changelog__+'## 1.1.1\n- Fix bugs.\n\n'
 __changelog__=__changelog__+'## 1.1.0\n- Import pakages by pipincluder.\n\n'
 __changelog__=__changelog__+'## 1.0.6\n- You can encrypt anything now.\n- Fix bugs.\n\n'

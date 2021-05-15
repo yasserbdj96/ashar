@@ -14,7 +14,7 @@
 <h2>Installation:</h2>
 
 ```
-pip install ashar==1.1.2
+pip install ashar==1.1.4
 ```
 
 <h2>Usage:</h2>
@@ -48,7 +48,7 @@ p1=ashar("123","Example:1").encode()
 print(p1)
     
 #To decrypt
-p2=ashar("123","p1").decode()
+p2=ashar("123",p1).decode()
 print(p2)
 #e
 
@@ -57,6 +57,10 @@ print(p2)
 <h2>Changelog:</h2>
 
 ```
+## 1.1.4
+ - fix bugs.
+ - new build 
+
 ## 1.1.2
  - fix bugs.
  - new build 

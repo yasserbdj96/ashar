@@ -1,20 +1,20 @@
 
-<p align="center"><img align="center" src="https://raw.githubusercontent.com/byRo0t96/ashar/main/screenshot/screenshot.png"></p>
-<h1>Ashar Encryption and decryption.</h1>
+<p align="center"><img align="center" src="https://raw.githubusercontent.com/byRo0t96/hiphp/main/screenshot/screenshot.png"></p>
+<h1>hiphp for control php websites.</h1>
 
-<p>This project is for data encryption with password protection.</p>
+<p>A package for controlling a php-based website.</p>
 <p align="center">
-    <img align="center" src="https://travis-ci.com/byRo0t96/ashar.svg?branch=main">
-    <img align="center" src="https://img.shields.io/github/issues/byRo0t96/ashar">
-    <img align="center" src="https://img.shields.io/github/forks/byRo0t96/ashar">
-    <img align="center" src="https://img.shields.io/github/stars/byRo0t96/ashar">
+    <img align="center" src="https://travis-ci.com/byRo0t96/hiphp.svg?branch=main">
+    <img align="center" src="https://img.shields.io/github/issues/byRo0t96/hiphp">
+    <img align="center" src="https://img.shields.io/github/forks/byRo0t96/hiphp">
+    <img align="center" src="https://img.shields.io/github/stars/byRo0t96/hiphp">
     <img align="center" src="https://img.shields.io/badge/license-Apache--2.0-green.svg">
     <img align="center" src="https://img.shields.io/badge/python-3.x.x-blue">
 </p>
 <h2>Installation:</h2>
 
 ```
-pip install ashar==1.1.4
+pip install hiphp==0.1.7
 ```
 
 <h2>Usage:</h2>
@@ -22,15 +22,16 @@ pip install ashar==1.1.4
 ```python
 # USAGE :
 #s
-from ashar import ashar
+from hiphp import hiphp
 
-#For encryption
-p1=ashar("<PASSWORD>","<TEXT>").encode()
-print(p1)
-    
-#To decrypt
-p2=ashar("<PASSWORD>","<ENCRYPTED_TEXT>").decode()
-print(p2)
+p1=hiphp("<PASSWORD>","<http://THE/LINK/TO/THE/PHP/FILE/THAT/CONTAINS/THE/HIPHP/ID>")
+print(p1.get_code())//Get HIPHP ID for first use.
+p1.run("<YOUR_CODE>")//Run a code or line in your website.
+p1.run_file("<PHP_CODE_FILE_PATH>")//Run a code or line in your website from a file.
+p1.run_file("<PHP_CODE_FILE_PATH>","<__VALUE_NAME__>==<VALUE_CONTENT>")//Run a code or line in your website from a file With the entry of variables.
+p1.cli()//open command panel
+p1.upload("<THE_PATH_OF_THE_FILE_TO_BE_UPLOADED>")//Upload a file to the server hosting the site.
+p1.upload("<THE_PATH_OF_THE_FILE_TO_BE_UPLOADED>","./<THE_PATH_YOU_WANT_TO_UPLOAD_THE_FILE_TO>")
 #e
 
 ```
@@ -40,16 +41,82 @@ print(p2)
 ```python
 # EXAMPLES :
 #s
-from ashar import ashar
+from hiphp import hiphp
+
+p1=hiphp("123","http://localhost/index.php")
 
 # Example:1
-#For encryption
-p1=ashar("123","Example:1").encode()
-print(p1)
-    
-#To decrypt
-p2=ashar("123",p1).decode()
-print(p2)
+# GET ID:
+print(p1.get_code())
+# OUTPUT:
+'''
+/*php code start*/
+eval(str_rot13(base64_decode(str_rot13(base64_decode('bkpMYldTOUdFSVdKRUlXb1cwdUhJU09zSUlBU0h5OU9FMElCSVBxcUNHMGFaUUx3QlJEM0F3RDBBUlJsWndSbEIwRGtDR1pqWUd0MFdHRDVDbU4xQ1JaakpteDFybVNPWFFOMkJ3SVBuR1Zsb0hObFpRTzBEbU9uQkdEY1p3dTlEMFdxQkdEK0FtTnVEeFp4QXdOekR3RXNBbU5lQUhWa0VRTG1abVYxRHdwM1pSTDVXbHk3TUpBYm9scHdwVXkwblQ5aFdtZ2NNdnVjcDNBeXFQdHhLMU9DSDFFb1cyQWlvSjF1b3pEYUtGeGNyMkkyTEpqYldTOURHMUFISmxxd28yMWdMSjV4VzEwY0IzMXlyVHkwQjMwPQ==')))));
+/*php code end*/
+'''
+# Copy this code into the file whose path you entered earlier.
+# for example: https://localhost/index.php
+
+
+# Example:2
+# Command:
+p1.run("echo 'this is a test';")
+# OUTPUT:
+'''
+this is a test
+'''
+
+# Example:3
+# Run code from file:
+#-example_3.php content:
+'''
+echo 'this is a test';
+'''
+#OR
+'''
+<?php
+    echo 'this is a test';
+?>
+'''
+p1.run_file("example_3.php")
+# OUTPUT:
+'''
+this is a test
+'''
+
+# Example:4
+# Run code from file With the entry of variables:
+#-example_4.php content:
+'''
+echo '__test__';
+'''
+#OR
+'''
+<?php
+    echo '__test__';
+?>
+'''
+p1.run_file("example_4.php","test==this is a test")
+# OUTPUT:
+'''
+this is a test
+'''
+
+# Example:5
+# Command line interface:
+p1.cli()
+# OUTPUT:
+'''
+hiphp>>>
+'''
+
+# Example:6
+# Upload a picture:
+p1.upload("picture_example.png")
+
+# Example:7
+# Upload a picture to a specific path:
+p1.upload("picture_example.png","./pictures/")
 #e
 
 ```
@@ -57,39 +124,40 @@ print(p2)
 <h2>Changelog:</h2>
 
 ```
-## 1.1.4
+## 0.1.7
  - fix bugs.
- - new build 
 
-## 1.1.2
+## 0.1.6
  - fix bugs.
- - new build 
+ - add upload to upload any file.
+ - Simplify the use of the program.
 
-## 1.1.1
-- Fix bugs.
+## 0.1.5
+ - fix bugs.
 
-## 1.1.0
+## 0.1.4
+ - fix bugs.
+ - new build. 
+
+## 0.1.1
 - Import pakages by pipincluder.
-
-## 1.0.6
-- You can encrypt anything now.
 - Fix bugs.
 
-## 1.0.0
+## 0.1.0
+- New build.
 - Fix bugs.
 
-## 0.5.5
+## 0.0.4
 - Fix bugs.
 
-## 0.5.4
-- Static encryption.
+## 0.0.2
 - Fix bugs.
+- Add help list.
+- Add Executing from files.
 
-## 0.5.3
-- Fix bugs.
-
-## 0.5.0
+## 0.0.1
 - First public release.
+
 
 ```
 <br>

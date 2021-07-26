@@ -1,33 +1,35 @@
+## 1.1.5
+ - Fix Bugs.
 ## 1.1.4
  - fix bugs.
- - new build 
-
+ - new build.
+ 
 ## 1.1.2
  - fix bugs.
- - new build 
-
+ - new build.
+ 
 ## 1.1.1
-- Fix bugs.
-
+ - Fix bugs.
+ 
 ## 1.1.0
-- Import pakages by pipincluder.
-
+ - Import pakages by pipincluder.
+ 
 ## 1.0.6
-- You can encrypt anything now.
-- Fix bugs.
-
+ - You can encrypt anything now.
+ - Fix bugs.
+ 
 ## 1.0.0
-- Fix bugs.
-
+ - Fix bugs.
+ 
 ## 0.5.5
-- Fix bugs.
-
+ - Fix bugs.
+ 
 ## 0.5.4
-- Static encryption.
-- Fix bugs.
-
+ - Static encryption.
+ - Fix bugs.
+ 
 ## 0.5.3
-- Fix bugs.
-
+ - Fix bugs.
+ 
 ## 0.5.0
-- First public release.
+ - First public release.

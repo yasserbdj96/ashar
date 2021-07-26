@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
 """
-#set:usage,examples,changelog
+#set:usage.py,examples.py,changelog.txt
 ##################################################################
 # USAGE :
 #s
@@ -30,49 +30,88 @@ p2=ashar("123",p1).decode()
 print(p2)
 #e
 ##################################################################
+# CHANGELOG :
+#s
+## 1.1.5
+ - Fix Bugs.
+
+## 1.1.4
+ - fix bugs.
+ - new build.
+ 
+## 1.1.2
+ - fix bugs.
+ - new build.
+ 
+## 1.1.1
+ - Fix bugs.
+ 
+## 1.1.0
+ - Import pakages by pipincluder.
+ 
+## 1.0.6
+ - You can encrypt anything now.
+ - Fix bugs.
+ 
+## 1.0.0
+ - Fix bugs.
+ 
+## 0.5.5
+ - Fix bugs.
+ 
+## 0.5.4
+ - Static encryption.
+ - Fix bugs.
+ 
+## 0.5.3
+ - Fix bugs.
+ 
+## 0.5.0
+ - First public release.
+#e
+##################################################################
 """
 # VALUES :
-#s
-__version__="1.1.4"
+__version__="1.1.5"
 __name__="ashar"
-__author__="Yasser BDJ (Ro0t96)"
-__author_email__="by.root96@gmail.com"
-__github_user_name__="byRo0t96"
+__author__="Yasser Bdj (Boudjada Yasser)"
+__author_email__="yasser.bdj96@gmail.com"
+__github_user_name__="yasserbdj96"
 __title__="Ashar Encryption and decryption."
 __description__="This project is for data encryption with password protection."
-__author_website__="https://byro0t96.github.io/"
+__author_website__=f"https://{__github_user_name__}.github.io/"
 __source_code__=f"https://github.com/{__github_user_name__}/{__name__}"
-__keywords__=['python','ashar','encode','decode','key','password','encrypt anything with password']
+__keywords__=[__github_user_name__,'python','encode','decode','key','password','encrypt anything with password']
+__keywords__.extend(__title__.split(" "))
+__keywords__.extend(__description__.split(" "))
 __install_requires__=['pipincluder']
 __Installation__="pip install "+__name__+"=="+__version__
-__license__='Apache Software License'
-__license_text__=f'''Copyright (c) 2008->Present, {__author__}
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+__license__='MIT License'
+__copyright__='Copyright © 2008->Present, '+__author__+"."
+__license_text__=f'''MIT License
 
-    http://www.apache.org/licenses/LICENSE-2.0
+{__copyright__}
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.'''
-__copyright__='Copyright 2008 -> Present, '+__author__
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-__changelog__=("## 1.1.4\n - fix bugs.\n - new build \n\n")
-__changelog__=__changelog__+("## 1.1.2\n - fix bugs.\n - new build \n\n")
-__changelog__=__changelog__+'## 1.1.1\n- Fix bugs.\n\n'
-__changelog__=__changelog__+'## 1.1.0\n- Import pakages by pipincluder.\n\n'
-__changelog__=__changelog__+'## 1.0.6\n- You can encrypt anything now.\n- Fix bugs.\n\n'
-__changelog__=__changelog__+'## 1.0.0\n- Fix bugs.\n\n'
-__changelog__=__changelog__+'## 0.5.5\n- Fix bugs.\n\n'
-__changelog__=__changelog__+'## 0.5.4\n- Static encryption.\n- Fix bugs.\n\n'
-__changelog__=__changelog__+'## 0.5.3\n- Fix bugs.\n\n'
-__changelog__=__changelog__+'## 0.5.0\n- First public release.\n'
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+You also agree that if you become very rich you will give me 1% of your wealth.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.'''
 ##################################################################
-#e
-
 #s
 from pipincluder import pipincluder
 

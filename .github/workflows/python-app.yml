@@ -6,18 +6,16 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    strategy:
-      # You can use PyPy versions in python-version.
-      # For example, pypy2 and pypy3
-      matrix:
-        python-version: [2.7, 3.6, 3.7, 3.8, 3.9]
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.8'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
       # You can test your matrix by printing the current Python version
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"

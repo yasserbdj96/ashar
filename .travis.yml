@@ -16,8 +16,8 @@ jobs:
       env: PATH=/c/Python38:/c/Python38/Scripts:$PATH
 install:
   - pip3 install --upgrade pip || pip install --upgrade pip
-  - pip3 install ashar || pip install ashar
+  - pip3 install ashar==1.1.5 || pip install ashar==1.1.5
 
 script: 
   - python3 ashar/ashar.py || python ashar/ashar.py
-  - python3 examples/example_1.py || python examples/example_1.py
+  - python3 examples.py || python examples.py

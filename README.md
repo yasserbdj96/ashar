@@ -3,13 +3,57 @@
 
 <p>This project is for data encryption with password protection.</p>
 
-<h2>Installation:</h2>
+<h2>Docker pull,build & run:</h2>
+
+```bash
+# pull:
+>>> docker pull docker.io/yasserbdj96/ashar:latest
+
+# build:
+>>> docker build -t docker.io/yasserbdj96/ashar:latest .
+
+# run:
+>>> docker run -e CONDI="<CONDITION*>" -e PASSWD="<PASSWORD*>" -e TEXT="<TEXT*>" -i -t docker.io/yasserbdj96/ashar:latest
+# *    = All inputs must be entered.
+```
+
+<h2>Github Packages pull,build & run:</h2>
+
+```bash
+# pull:
+>>> docker pull ghcr.io/yasserbdj96/ashar:latest
+
+# build:
+>>> docker build -t ghcr.io/yasserbdj96/ashar:latest .
+
+# run:
+>>> docker run -e CONDI="<CONDITION*>" -e PASSWD="<PASSWORD*>" -e TEXT="<TEXT*>" -i -t ghcr.io/yasserbdj96/ashar:latest
+```
+
+<h2>Python Package Installation:</h2>
 
 ```
-pip install ashar==1.1.5
+# install from pypi:
+>>> pip install ashar
+
+# local install:
+>>> git clone https://github.com/yasserbdj96/ashar.git
+>>> cd ashar
+>>> sudo python setup.py install
+
+# uninstall:
+>>> pip uninstall ashar
 ```
 
-<h2>Usage:</h2>
+<h2>Run without installation:</h2>
+
+```
+>>> git clone https://github.com/yasserbdj96/ashar.git
+>>> cd ashar
+>>> python3 run.py <CONDITION*> <PASSWORD*> <TEXT*>
+```
+
+<h2>Script Usage:</h2>
 
 ```python
 from ashar import ashar
@@ -23,7 +67,7 @@ print(p2)
 
 ```
 
-<h2>Examples:</h2>
+<h2>Script Examples:</h2>
 
 ```python
 from ashar import ashar
@@ -41,9 +85,13 @@ print(p2)
 <h2>Changelog:</h2>
 
 ```
+## 1.1.6
+ - Delete pipincluder pakage.
+ - Fix Bugs.
+
 ## 1.1.5
  - Fix Bugs.
- 
+
 ## 1.1.4
  - fix bugs.
  - new build.
@@ -81,30 +129,14 @@ print(p2)
 ```
 
 <h1></h1> 
-   
-<p align="center">
-   <a href="https://www.linkedin.com/in/yasserbdj96" align="center"><img align="center" alt="linkedin" src="https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white"></a>
-   <a href="https://yasserbdj96.github.io" align="center"><img align="center" alt="website" src="https://img.shields.io/badge/Website-3b5998?style=flat-square&logo=google-chrome&logoColor=white"></a>
-   <a href="https://twitter.com/yasserbdj96" align="center"><img align="center" alt="twitter" src="https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white"></a>
-   <a href="https://www.instagram.com/yasserbdj96" align="center"><img align="center" alt="instagram" src="https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white"></a>
-   <a href="https://www.facebook.com/yasserbdj96" align="center"><img align="center" alt="facebook" src="https://img.shields.io/badge/-facebook-0088cc?style=flat-square&logo=facebook&logoColor=white"></a>
-   <a href="https://www.youtube.com/channel/UC53dtKxc84BNPyDb51rtRPg" align="center"><img align="center" alt="youtube" src="https://img.shields.io/badge/-youtube-ea4335?style=flat-square&logo=youtube&logoColor=white"></a>
-   <a href="https://pypi.org/user/yasserbdj96" align="center"><img align="center" alt="pypi" src="https://img.shields.io/badge/-pypi-efeeea?style=flat-square&logo=pypi"></a>
-</p>
 
-<p align="center">
-    BTC : 16mUJYXdNh9VkjN3MQawA8wvYJqL9F5CKZ
 
-</p>
+Don't forget to star ⭐ this repository
+<br>
 
-<p align="center">
-    <a align="center" href="https://ko-fi.com/L3L34CEPV">
-        <img alt="ko-fi" align="center" src="https://ko-fi.com/img/githubbutton_sm.svg">
-    </a>
-</p>
+all posts [`#yasserbdj96`](#yasserbdj96) ,all views my own.
 
+<br>
 <div align="center">
-    <a href="https://yasserbdj96.github.io"><img alt="yasserbdj96" height="100" src="https://raw.githubusercontent.com/yasserbdj96/yasserbdj96/main/images/yasserbdj96.png"></a>
-   <br>
-    <a href="https://github.com/yasserbdj96/" align="center"><img align="center" alt="" src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.ashar"></a>
+    <a href="http://yasserbdj96.github.io/">Go to this link to get more information.</a>
 </div>

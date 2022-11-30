@@ -14,15 +14,24 @@
 #START{
 from ashar import ashar
 
-# Example:1
-#For encryption
-#p1=ashar("123","Example:1",chars="abcdefghijklmnopqrstuvwxyz",upchars=False,smbls=False,numb=False).encode()
-#p1=ashar("<PASSWORD*>","<TEXT*>",chars='abcdefghijklmnopqrstuvwxyz',upchars='ABCDEFGHIJKLMNOPQRSTUVWXYZ',smbls=')(}{][><!?$%&-_=+;',numb='0123456789').encode()
-p1=ashar("123","Example:1").encode()
-print(p1)
-    
-#To decrypt
-p2=ashar("123",p1).decode()
-print(p2)
+try:
+    import os
+    import sys
+    #
+    CONDI = os.environ['CONDI'] if "CONDI" in os.environ else sys.argv[1]
+    PASSWD = os.environ['PASSWD'] if "PASSWD" in os.environ else sys.argv[2]
+    TEXT = os.environ['TEXT'] if "TEXT" in os.environ else sys.argv[3]
 
+    if CONDI.upper()=="encode".upper():
+        p1=ashar(PASSWD,TEXT).encode()
+        print(p1)
+    elif CONDI.upper()=="decode".upper():
+        p2=ashar(PASSWD,TEXT).decode()
+        print(p2)
+
+except Exception as e:
+    print(f"USAGE : python3 {sys.argv[0]} <CONDITION*> <PASSWORD*> <TEXT*>")
+    print("CONDITION*: encode/decode")
+    exit()
+    #pass
 #}END.

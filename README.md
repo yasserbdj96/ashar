@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Ashar</h1>
   <strong>ashar - free & open source project for text encryption with password protection.</strong>
+  <br><br>
 </div>
 
 [![Test on Ubuntu latest](https://github.com/yasserbdj96/ashar/actions/workflows/python-app-on-linux.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/python-app-on-linux.yml)

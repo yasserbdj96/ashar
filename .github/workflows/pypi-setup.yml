@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest,macos-latest,windows-latest] #,windows-latest
-        python-version: [3.6, 3.7, 3.8, 3.9]
+        python-version: [3.7, 3.8, 3.9]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{matrix.python-version}}
@@ -35,6 +35,6 @@ jobs:
       #- name: Install requirements
       #  run: pip install -r requirements.txt
       - name: Install pypi requirements
-        run: pip install -r requirements-pypi.txt
+        run: bash install_all_requirements_linux.sh
       - name: Run setup.py File
         run: python wrdir/setup.py install

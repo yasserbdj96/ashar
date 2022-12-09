@@ -24,7 +24,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/yasserbdj96/ashar)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yasserbdj96/ashar)
 [![GitHub license](https://img.shields.io/github/license/yasserbdj96/ashar)](https://github.com/yasserbdj96/ashar)
-[![Join the chat at https://gitter.im/yasserbdj96/ashar](https://badges.gitter.im/yasserbdj96/ashar.svg)](https://gitter.im/yasserbdj96/ashar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/yasserbdj96/ashar](https://badges.gitter.im/yasserbdj96/ashar.svg)](https://gitter.im/yasserbdj96/ashar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Join the chat at https://gitter.im/yasserbdj96/ashar](https://badges.gitter.im/yasserbdj96/ashar.svg)](https://gitter.im/yasserbdj96/ashar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <br>
 <h2>Python Package Installation:</h2>

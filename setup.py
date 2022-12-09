@@ -33,7 +33,7 @@ setup(
         'Author WebSite':"https://yasserbdj96.github.io/"
     },
     install_requires=[],
-    keywords=["python","text","encryption","encode","password","protection"],
+    keywords=["python","encoding","protection","encryption","text","decoder","decoding","password","python3","coding","encode","decryption","yasserbdj96"],
     classifiers=[
         "Environment :: Web Environment",
         "Development Status :: 5 - Production/Stable",

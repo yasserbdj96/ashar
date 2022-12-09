@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# coding:utf-8
 #   |                                                          |
 # --+----------------------------------------------------------+--
 #   |   Code by : yasserbdj96                                  |
@@ -11,6 +9,24 @@
 # --+----------------------------------------------------------+--
 #   |                                                          |
 
+#make run con="<encode/decode>" pass="<PASSWORD>" text="<TEXT>"
+
 #START{
-__version__="1.1.8"
+VENV = venv
+PYTHON = $(VENV)/bin/python3
+PIP = $(VENV)/bin/pip
+
+RUN = run.py $(con) $(pass) $(text)
+
+run: $(VENV)/bin/activate
+	$(PYTHON) $(RUN)
+
+$(VENV)/bin/activate: requirements.txt
+	python3 -m venv $(VENV)
+	$(PIP) install -r ./requirements.txt
+	$(PIP) install -r ./requirements-pypi.txt
+
+clean:
+	rm -rf ashar/__pycache__
+	rm -rf $(VENV)
 #}END.

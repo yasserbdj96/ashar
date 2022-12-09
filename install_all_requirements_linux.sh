@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# coding:utf-8
+#!/bin/bash
 #   |                                                          |
 # --+----------------------------------------------------------+--
 #   |   Code by : yasserbdj96                                  |
@@ -12,5 +11,7 @@
 #   |                                                          |
 
 #START{
-__version__="1.1.8"
+python -m pip install -r ./requirements.txt
+python -m pip install -r ./requirements-pypi.txt
+
 #}END.

@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# coding:utf-8
+#!/bin/bash
 #   |                                                          |
 # --+----------------------------------------------------------+--
 #   |   Code by : yasserbdj96                                  |
@@ -12,5 +11,6 @@
 #   |                                                          |
 
 #START{
-__version__="1.1.8"
+find . -type d -name __pycache__ -prune -exec rm -rf {} \;
+find . -type d -name venv -prune -exec rm -rf {} \;
 #}END.

@@ -12,7 +12,13 @@
 #   |                                                          |
 
 #START{
-from ashar import ashar
+
+try:
+    from ashar import ashar
+except:
+    import os
+    os.chdir("../")
+    from ashar import ashar
 
 # Example:1
 #For encryption

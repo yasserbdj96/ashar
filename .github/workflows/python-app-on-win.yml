@@ -1,4 +1,4 @@
-name: Python package
+name: Run on windows
 
 on: [push]
 
@@ -24,7 +24,7 @@ jobs:
       - name: Create Workspace Folder
         run: mkdir -p wrdir && mkdir -p wrdir/ashar
       - name: Copy Files to Workspace Folder
-        run: cp -r ashar/* wrdir/ashar && cp examples.py wrdir/examples.py
+        run: cp -r ashar/* wrdir/ashar && cp ashar-examples/examples.py wrdir/examples.py
       #- name: pip Upgrade
       #  run: python -m pip install --upgrade pip
       - name: Install requirements

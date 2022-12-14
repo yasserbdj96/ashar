@@ -9,6 +9,7 @@
 [![Test on MacOS latest](https://github.com/yasserbdj96/ashar/actions/workflows/python-app-on-mac.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/python-app-on-mac.yml)
 [![pypi-setup](https://github.com/yasserbdj96/ashar/actions/workflows/pypi-setup.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/pypi-setup.yml)
 ![Upload to PYPI](https://github.com/yasserbdj96/ashar/actions/workflows/pipup.yml/badge.svg)
+[![Mirror and run GitLab CI](https://github.com/yasserbdj96/ashar/actions/workflows/push-gitLab.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/push-gitLab.yml)
 [![Deploy static content to Pages](https://github.com/yasserbdj96/ashar/actions/workflows/pages.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/pages.yml)
 [![CodeQL](https://github.com/yasserbdj96/ashar/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/codeql-analysis.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/ashar/badge)](https://www.codefactor.io/repository/github/yasserbdj96/ashar)

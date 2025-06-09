@@ -1,7 +1,10 @@
+<!-- Project Header -->
 <div align="center">
-  <h1>Ashar</h1>
-  <strong>ashar - free & open source project for text encryption with password protection.</strong>
-  <br><br>
+  <img src="https://raw.githubusercontent.com/yasserbdj96/ashar/main/logo.png" alt="ashar by yasserbdj96" height="200">
+  <h1 style="margin: 10px 0;">Ashar</h1>
+  <p style="font-size: 18px; font-weight: 500; max-width: 600px;">
+    Ashar - free & open source project for text encryption with password protection.
+  </p>
 </div>
 
 [![Test on Ubuntu latest](https://github.com/yasserbdj96/ashar/actions/workflows/python-app-on-linux.yml/badge.svg)](https://github.com/yasserbdj96/ashar/actions/workflows/python-app-on-linux.yml)

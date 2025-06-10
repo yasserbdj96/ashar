@@ -2,7 +2,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/yasserbdj96/ashar/main/logo.png" alt="ashar by yasserbdj96" height="200">
   <h1 style="margin: 10px 0;">Ashar</h1>
-  <p style="font-size: 18px; font-weight: 500; max-width: 600px;">
+  <p style="font-size: 18px; font-weight: 500;">
     Ashar is a free and open-source project developed to provide a lightweight yet effective solution for secure text encryption and obfuscation. It allows users to protect their sensitive data through password-based encoding mechanisms, ensuring both confidentiality and integrity. By combining techniques like Base64 encoding, MD5 hashing, and custom character manipulation, Ashar offers a simple yet reliable way to encode and decode messages. Whether you're looking to secure notes, store credentials, or transmit confidential information, Ashar ensures that your content remains private, tamper-resistant, and accessible only to those with the correct password.
   </p>
 </div>
